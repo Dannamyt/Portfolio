@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yomi's Portfolio</title>
+    <link rel="shortcut icon" href="./Assets/fav-mid.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("leRGJWEIleVfRtaAZ");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- ======NAVBAR=========== -->
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <h1>DevBro</h1>
+            </a>
+        </div>
+        <div class="navLinks">
+            <ul>
+
+                <li>
+                    <a href="#home" class="navLink active">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="navLink">About</a>
+                </li>
+                <li>
+                    <a href="#work" class="navLink">Work</a>
+                </li>
+                <li>
+                    <a href="#contact" class="navLink">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="nav-buttons">
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <div class="burger">
+                <i class='bx bx-menu'></i> </div>
+        </div>
+    </div>
+
+    <!-- ====HERO==== -->
+
+    <div class="hero-wrapper" id="home">
+        <div class="hero">
+            <img src="./Assets/undraw_programming_re_kg9v.svg" alt="">
+        </div>
+        <div class="intro">
+            <h1 class="home-title">Hi👋,<br>I'm Yomi,<br><span class="role">Front-End Engineer</span></h1>
+            <a href="./Assets/Daniel_Abayomi_CV.PDF" class="button"> <i class='bx bx-download'></i> Download Resume</a>
+
+        </div>
+
+    </div>
+    <!-- ===ABOUT ME=== -->
+
+    <section class="about section" id="about">
+
+        <div class="about-container bd-grid">
+            <div class="about-img">
+                <img src="./Assets/3d.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+
+                <p>Enthusiastic front-end engineer with hands-on experience and passion for developing reposnsive design and accessibility-certified websites.I'm always looking forward to increase the team's productivity.For more information you can download
+                    my resume</p>
+            </div>
+        </div>
+    </section>
+
+    <!--========== SKILLS  ==== -->
+
+    <div class="stack-container">
+        <h2 class="section-title">Skills</h2>
+        <div class="stacks">
+            <div class="html">
+                <img src="./Assets/icons8-html-5.svg" alt="">
+                <h4>HTML</h4>
+            </div>
+            <div class="css">
+                <img src="./Assets/icons8-css3.svg" alt="">
+                <h4>CSS</h4>
+            </div>
+            <div class="js">
+                <img src="./Assets/icons8-javascript.svg" alt="">
+                <h4>JS</h4>
+            </div>
+            <div class="git">
+                <img src="./Assets/icons8-git.svg" alt="">
+                <h4>Git</h4>
+            </div>
+            <div class="acc">
+                <img src="./Assets/icons8-web-accessibility-48.png" alt="">
+                <h4>Accessibility</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============PROJECTS===== -->
+
+    <section class="projects section" id="work">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-container bd-grid">
+            <div class="project">
+                <img src="./Assets/img14.jpg" alt="">
+                <p>Demo</p>
+                <p>Source Code</p>
+            </div>
+            <div class="project">
+                <img src="./Assets/img3.jpg" alt="">
+                <p>Demo</p>
+                <p>Source Code</p>
+            </div>
+            <div class="project">
+                <img src="./Assets/p3.jpg" alt="">
+                <p>Demo</p>
+                <p>Source Code</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======CONTACT====== -->
+
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container bd-grid">
+            <form action="" class="contact-form">
+                <input type="text" id="fullName" placeholder="Full Name" required class="contact-input">
+                <input type="email" id="email_id" placeholder="Email" required class="contact-input">
+                <textarea id="message" placeholder="Message Me" cols="0 " rows="10 " class="contact-input"></textarea>
+                <input type="button" value="Send" class="contact-button button" onclick="SendMail()">
+            </form>
+        </div>
+    </section>
+
+    <!-- ======FOOTER===== -->
+
+    <footer class="footer">
+        <h1 class="footer-title">Abayomi</h1>
+        <div class="footer-social">
+            <a href="https://twitter.com/DevPro_" target="_blank" class="footer-icon"><img src="./Assets/twitter.svg" alt=""></a>
+            <a href="https://github.com/Dannamyt" target="_blank" class="footer-icon"><img src="./Assets/icons8-github.svg" alt=""></a>
+            <a href="https://linkedin.com/in/danielabayomi" target="_blank" class="footer-icon"><img src="./Assets/icons8-linkedin.svg" alt=""></a>
+            <!-- <a href="https://abayomda@gmail.com" target="_blank" class="footer-icon"><img src="./Assets/gmail.svg" alt=""></a> -->
+        </div>
+        <p>&#169; 2022 Copyright</p>
+    </footer>
+    <script src=" https://unpkg.com/scrollreveal "></script>
+    <script src="./main.js " defer></script>
+</body>
+
+</html>
